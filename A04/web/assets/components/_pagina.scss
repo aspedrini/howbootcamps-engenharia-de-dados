@@ -1,0 +1,56 @@
+@import '../abstract/variaveis';
+
+.cartoes {
+    background-color: $cor-secundaria;   
+    display: flex;
+    width: 300%;
+    height: 100vh;
+    .cartao {
+        display: flex;
+        flex-direction: column;
+        width: calc(100% / 3);
+        max-height: 85%;
+        box-sizing: border-box;
+        margin-top: 0;
+        padding: 1.7rem 2.05rem 0 2.05rem;
+        text-align: center;
+        transition: 600ms;
+        .cartao__imagem {
+            width: 100%;
+            height: auto;
+        }
+        .cartao__titulo {
+            font-size: 24px;
+            font-weight: 600;
+            margin: 0.5rem 0 1.5rem;
+        }
+        .cartao__descricao {
+            width: 100%;
+            margin: 0 0 3.55rem;
+        }
+        .cartao__link {
+            color: $cor-destaque;
+            font-weight: 500;
+        }
+    }
+}
+
+@media screen and (min-width: 426px) {
+    .cartoes {
+        .cartao {
+            margin: 0;
+            max-width: 100vw;
+            max-height: 85vh;
+            align-items: center;
+            > * {
+                max-width: 351px;
+            }
+            .cartao__botao {
+                width: 351px;
+            }
+        }
+    }
+}
+// TO DO:
+// - RESPONSIVIDADE
+// - PROBLEMA NA NAVEGACAO INPUT / PELOS BOTOES

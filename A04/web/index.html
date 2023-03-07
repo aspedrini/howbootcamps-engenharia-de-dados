@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onboarding</title>
+    <link href="/assets/reset.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="/assets/styles.css" rel="stylesheet">
+</head>
+<body>
+    <section class="cartoes">
+        <input type="radio" name="slider" id="cartao1" checked>
+        <input type="radio" name="slider" id="cartao2">
+        <input type="radio" name="slider" id="cartao3">
+            <div class="cartao" id="primeiro">
+                <img src="./img/community.svg" alt="Círculo com pessoas dentro, espalhadas ao redor de uma ilustração de globo terrestre" class="cartao__imagem">
+                <h2 class="cartao__titulo">Plant lover Community</h2>
+                <p class="cartao__descricao">Find gardening enthusiasts from all over the world</p>
+                <div class="cartao__navegacao">
+                    <label for="cartao1"></label>
+                    <label for="cartao2"></label>
+                    <label for="cartao3"></label>
+                </div>
+                <a href="#segundo"><button class="cartao__botao">Continue</button></a>
+                <a href="#terceiro" class="cartao__link">Skip</a>
+            </div>
+            <div class="cartao" id="segundo">
+                <img src="./img/delivery.svg" alt="Pessoa retirando um pedido no estabelecimento" class="cartao__imagem">
+                <h2 class="cartao__titulo">Get fast & safe delivery</h2>
+                <p class="cartao__descricao">Get good quality products for your plants </p>
+                <div class="cartao__navegacao">
+                    <label for="cartao1"></label>
+                    <label for="cartao2" class="cartao__navegacao--active"></label>
+                    <label for="cartao3"></label>
+                </div>
+                <a href="#terceiro"><button class="cartao__botao">Continue</button></a>
+                <a href="#terceiro" class="cartao__link">Skip</a>
+            </div>
+            <div class="cartao" id="terceiro">
+                <img src="./img/ecommerce.svg" alt="Illustração de uma pessoa, encostada em um celular com o desenho de uma tenda de mercado, carrinho de compras e sacolas de compras" class="cartao__imagem">
+                <h2 class="cartao__titulo">Buy & Sell Tools</h2>
+                <p class="cartao__descricao">Buy & sell good quality products for your beautiful plants</p>
+                <div class="cartao__navegacao">
+                    <label for="cartao1"></label>
+                    <label for="cartao2"></label>
+                    <label for="cartao3" class="cartao__navegacao--active"></label>
+                </div>
+                <a href="#primeiro"><button class="cartao__botao">Get started</button></a>
+            </div>
+    </section>
+</body>
+</html>

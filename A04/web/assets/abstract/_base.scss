@@ -1,0 +1,13 @@
+@import './variaveis';
+
+html, body {
+    font-family: $fonte;
+    font-size: 18px;
+    font-weight: 400;
+    color: $cor-principal;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    a {
+        text-decoration: none;
+    }
+}
